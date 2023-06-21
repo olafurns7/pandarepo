@@ -1,0 +1,11 @@
+{
+  "name": "configs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "turbo build"
+  },
+  "dependencies": {
+    "postcss": "^8.4.24"
+  }
+}

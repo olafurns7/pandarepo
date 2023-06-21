@@ -1,5 +1,9 @@
 {
   "private": true,
+  "engines": {
+    "npm": "Please use pnpm",
+    "yarn": "Please use pnpm"
+  },
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
@@ -7,10 +11,10 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "@turbo/gen": "^1.9.7",
+    "@turbo/gen": "^1.10.2",
     "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
-    "prettier": "^2.5.1",
+    "prettier": "^2.8.8",
     "turbo": "latest"
   },
   "packageManager": "pnpm@7.15.0",
