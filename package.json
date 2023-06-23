@@ -15,7 +15,7 @@
     "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
     "prettier": "^2.8.8",
-    "turbo": "latest"
+    "turbo": "^1.10.4"
   },
   "packageManager": "pnpm@7.15.0",
   "name": "dd-catalyst"

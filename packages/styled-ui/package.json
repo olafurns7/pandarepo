@@ -1,0 +1,33 @@
+{
+  "name": "styled-ui",
+  "version": "0.0.0",
+  "private": true,
+  "types": "./dist/index.d.ts",
+  "description": "I haven't figured out how to make PandaCSS work within a monorepo",
+  "exports": {
+    ".": "./dist/"
+  },
+  "scripts": {
+    "bla:panda": "panda dev --watch",
+    "bla:tsup": "tsup --watch",
+    "bla": "pnpm dev:tsup && pnpm dev:panda"
+  },
+  "dependencies": {
+    "@pandacss/dev": "^0.4.0",
+    "@radix-ui/react-slot": "^1.0.2"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@pandacss/types": "^0.4.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "workspace:*",
+    "postcss": "^8.4.24",
+    "tsconfig": "workspace:*",
+    "tsup": "^7.0.0",
+    "typescript": "^4.5.2"
+  }
+}
