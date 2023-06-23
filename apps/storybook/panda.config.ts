@@ -1,10 +1,16 @@
-import { defineConfig } from '@pandacss/dev';
+import { defineConfig } from "@pandacss/dev";
+import { join } from "path";
+
+const cwd = process.cwd();
+
 export default defineConfig({
   // Whether to use css reset
   preflight: true,
-
   // Where to look for your css declarations
-  include: ['./src/**/*.{js,jsx,ts,tsx}'],
+  include: [
+    "./stories/**/*.{js,jsx,ts,tsx}",
+    join(cwd, "./node_modules/styled-ui/src/**/*.{js,jsx,ts,tsx}"),
+  ],
 
   // Files to exclude
   exclude: [],
@@ -15,7 +21,7 @@ export default defineConfig({
   },
 
   // The output directory for your css system
-  outdir: 'styled-system',
+  outdir: "styled-system",
   emitPackage: true,
-  jsxFramework: 'react',
+  jsxFramework: "react",
 });
