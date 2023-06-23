@@ -13,10 +13,10 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "ui": "workspace:*"
+    "styled-ui": "workspace:*"
   },
   "devDependencies": {
-    "@pandacss/dev": "^0.3.2",
+    "@pandacss/dev": "^0.4.0",
     "@storybook/addon-essentials": "^7.0.20",
     "@storybook/addon-interactions": "^7.0.20",
     "@storybook/addon-links": "^7.0.20",

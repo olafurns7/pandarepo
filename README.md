@@ -1,3 +1,26 @@
+https://discord.com/channels/1118988919804010566/1120303592507715616/1121727708955680829
+
+I've been trying to get this to work on and off in my turborepo monorepo, I can't seem to get it working properly.
+
+I have the following setup:
+
+apps
+-- web
+-- web2
+-- storybook
+
+packages
+-- ui
+-- styled-ui(panda)
+
+Both of the ui packages are internal, or not supposed to be bundled as a npm package
+
+I've set Panda up in the storybook app, and the styled-ui one, but I'm a bit up in the air about how I should manage developing the components inside styled-ui and having it display correctly inside the storybook.
+
+Do I need to be doing a build-ship --watch on the panda ui package so that I can properly use it in storybook ? Which of course is, somewhat bundling it to be a external package which I don't really need 
+
+
+
 # Turborepo starter
 
 This is an official starter Turborepo.

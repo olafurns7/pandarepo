@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Button } from 'ui';
+import { Button } from 'styled-ui';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta = {
@@ -12,10 +12,10 @@ const meta = {
     size: { control: 'select', options: ['small', 'medium'], description: 'Dimensions of the button' },
     asChild: {
       control: 'boolean',
-      description: 'Render the button as the element that is passed as a child, f.e a href tag'
+      description: 'Render the button as the element that is passed as a child, f.e a href tag',
     },
-    children: { control: 'text', description: 'Can be text, or a component', defaultValue: "I'm a button" }
-  }
+    children: { control: 'text', description: 'Can be text, or a component', defaultValue: "I'm a button" },
+  },
 } satisfies Meta<typeof Button>;
 
 export default meta;
@@ -25,32 +25,32 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     // primary: true,
-    label: 'Button'
-  }
+    label: 'Button',
+  },
 };
 
 export const Secondary: Story = {
   args: {
-    label: 'Button'
-  }
+    label: 'Button',
+  },
 };
 
 export const Large: Story = {
   args: {
     size: 'medium',
-    label: 'Button'
-  }
+    label: 'Button',
+  },
 };
 
 export const Small: Story = {
   args: {
     size: 'small',
-    label: 'Button'
-  }
+    label: 'Button',
+  },
 };
 
 export const HrefAsChild: Story = {
   args: {
-    children: <a href="https://www.google.com">This is a tag</a>
-  }
+    children: <a href="https://www.google.com">This is a tag</a>,
+  },
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button } from 'ui';
+import { Button } from 'styled-ui';
 import './header.css';
 
 type User = {
